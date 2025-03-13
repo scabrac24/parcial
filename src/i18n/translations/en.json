@@ -1,0 +1,26 @@
+{
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "loginButton": "Login",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password",
+      "emailError": "Please enter a valid email",
+      "passwordError": "Password must be at least 8 characters"
+    },
+    "home": {
+      "welcome": "Welcome",
+      "bestTimes": "Best Times",
+      "running": "Running",
+      "swimming": "Swimming",
+      "cycling": "Cycling",
+      "distance": "Distance",
+      "duration": "Duration",
+      "location": "City"
+    },
+    "modal": {
+      "close": "Close",
+      "details": "Workout Details"
+    }
+  }

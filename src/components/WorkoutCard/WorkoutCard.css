@@ -1,0 +1,56 @@
+/* src/components/WorkoutCard/WorkoutCard.css */
+.workout-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .workout-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .workout-image-container {
+    height: 160px;
+    overflow: hidden;
+  }
+  
+  .workout-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .workout-info {
+    padding: 15px;
+  }
+  
+  .workout-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .workout-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .workout-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .detail-label {
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .detail-value {
+    color: #333;
+  }

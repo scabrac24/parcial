@@ -1,0 +1,26 @@
+{
+    "login": {
+      "title": "Iniciar sesión",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "loginButton": "Ingresar",
+      "emailPlaceholder": "Ingresa tu correo",
+      "passwordPlaceholder": "Ingresa tu contraseña",
+      "emailError": "Por favor ingresa un correo válido",
+      "passwordError": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "home": {
+      "welcome": "Bienvenido",
+      "bestTimes": "Mejores tiempos",
+      "running": "Corriendo",
+      "swimming": "Nadando",
+      "cycling": "En cicla",
+      "distance": "Distancia",
+      "duration": "Duración",
+      "location": "Ciudad"
+    },
+    "modal": {
+      "close": "Cerrar",
+      "details": "Detalles del entrenamiento"
+    }
+  }
