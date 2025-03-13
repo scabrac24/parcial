@@ -27,7 +27,7 @@ function Login() {
       setEmailError('');
     }
     
-    if (password.length < 8) {
+    if (password.length < 5 || password.length > 8) {
       setPasswordError(t('login.passwordError'));
       return;
     } else {
