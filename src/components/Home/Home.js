@@ -1,29 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; 
+import { useTranslation } from "react-i18next"; 
+import "./Home.css";
 
 function Home() {
+  const { t } = useTranslation(); 
+
   return (
     <div className="home-container">
-      <h1>Home (25%)</h1>
+      <h1>{t("home.title")}</h1>
       <div className="image-container">
         <img
-          src="https://static.vecteezy.com/system/resources/previews/007/591/385/non_2x/hand-drawn-fast-food-decorative-background-vector.jpg" 
+          src="https://plus.unsplash.com/premium_photo-1705056547423-de4ef0f85bf7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29taWRhJTIwZm9uZG8lMjBibGFuY298ZW58MHx8MHx8fDA%3D"
           alt="Home Background"
           className="background-image"
         />
         <div className="overlay">
           <Link to="/menu" className="nav-item">
-            <img src="" alt="Menu" />
-            <span>MENU</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151409.png" alt="Menu" />
+            <span>{t("home.menu")}</span>
           </Link>
           <Link to="/stores" className="nav-item">
-            <img src="" alt="Stores" />
-            <span>STORES</span>
+            <img src="https://cdn0.iconfinder.com/data/icons/shopping-solid-1/48/39-512.png" alt="Stores" />
+            <span>{t("home.stores")}</span>
           </Link>
           <Link to="/cart" className="nav-item">
-            <img src="" alt="Cart" />
-            <span>CART</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/1413/1413908.png" alt="Cart" />
+            <span>{t("home.cart")}</span>
           </Link>
         </div>
       </div>

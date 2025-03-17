@@ -1,26 +1,20 @@
 {
-    "login": {
-      "title": "Iniciar sesión",
-      "email": "Correo electrónico",
-      "password": "Contraseña",
-      "loginButton": "Ingresar",
-      "emailPlaceholder": "Ingresa tu correo",
-      "passwordPlaceholder": "Ingresa tu contraseña",
-      "emailError": "Por favor ingresa un correo válido",
-      "passwordError": "La contraseña debe tener al menos 8 caracteres"
-    },
-    "home": {
-      "welcome": "Bienvenido",
-      "bestTimes": "Mejores tiempos",
-      "running": "Corriendo",
-      "swimming": "Nadando",
-      "cycling": "En cicla",
-      "distance": "Distancia",
-      "duration": "Duración",
-      "location": "Ciudad"
-    },
-    "modal": {
-      "close": "Cerrar",
-      "details": "Detalles del entrenamiento"
-    }
+  "home": {
+    "title": "Inicio",
+    "menu": "Menú",
+    "stores": "Tiendas",
+    "cart": "Carrito",
+    "language": "Idioma"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "Introduce tu correo",
+    "password": "Contraseña",
+    "passwordPlaceholder": "Introduce tu contraseña",
+    "loginButton": "Iniciar sesión",
+    "emailError": "Formato de correo inválido",
+    "passwordError": "La contraseña debe tener entre 5 y 8 caracteres",
+    "language": "Idioma"
   }
+}

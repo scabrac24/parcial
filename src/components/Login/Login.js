@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n/i18n';
 import './Login.css';
 
 function Login() {
@@ -11,6 +12,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const [language, setLanguage] = useState(i18n.language); // Estado para el idioma actual
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,6 +37,13 @@ function Login() {
     }
     
     navigate('/home');
+  };
+
+  // Función para cambiar de idioma
+  const toggleLanguage = () => {
+    const newLanguage = language === 'en' ? 'es' : 'en';
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
   };
 
   return (
@@ -64,10 +73,16 @@ function Login() {
             />
             {passwordError && <div className="error-message">{passwordError}</div>}
           </div>
-          
+
           <button type="submit" className="login-button">
             {t('login.loginButton')}
           </button>
+
+          {/* Botón de cambio de idioma */}
+          <button type="button" className="language-button" onClick={toggleLanguage}>
+            {language === 'en' ? 'Español' : 'English'}
+          </button>
+
         </form>
       </div>
     </div>

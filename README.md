@@ -1,3 +1,47 @@
+
+
+DECISIONES DE DISEÑO:
+
+-   Paleta de colores
+
+Fondo claro: Para una apariencia fresca y accesible.
+
+Colores neutros y suaves: Para garantizar una experiencia visual agradable.
+
+-   Distribución de elementos
+
+Cuerpo principal: Una seccion central en /home en la cual se presentan tres botones que permiten acceder a /stores , /Menu y /Cart
+
+
+DECISIONES TECNICAS:
+
+-   React y Componentes reutilizables:
+
+Se utilizó React para modularidad y escalabilidad.
+
+-   Componentes clave:
+
+Login.js: Manejo de autenticación y validación de datos.
+
+Home.js: Página principal con navegación clara.
+
+-   Internacionalización con i18n
+
+Implementación de i18next para cambiar entre español e inglés sin recargar la página.
+
+-   Estilos con CSS modular
+
+Se usaron archivos CSS específicos (Home.css, Login.css) para mantener orden y evitar conflictos.
+
+-   React Router para navegación
+
+Se utilizó react-router-dom para navegación sin recargas.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
